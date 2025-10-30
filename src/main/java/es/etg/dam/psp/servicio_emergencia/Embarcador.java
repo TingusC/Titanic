@@ -4,12 +4,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Embarcador {
+public class Embarcador implements Lanzador {
+
+    public static final int PARADA = 2000;
     
-    public static String embarcar(String[] comandos) throws IOException
+    @Override
+    public String ejecutar(String[] comandos) throws IOException, InterruptedException
     {
         Process process = Runtime.getRuntime().exec(comandos);
         StringBuilder salida = new StringBuilder();
+
+        Thread.sleep(PARADA);
 
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))){
             String linea;

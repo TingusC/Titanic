@@ -1,14 +1,39 @@
 package es.etg.dam.psp.servicio_emergencia;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ServicioEmergencia {
 
     public static final String COMANDO = "java";
     public static final String PROCESO = "src/main/java/es/etg/dam/psp/bote/Bote.java";
-    public static void main(String[] args) throws IOException {
-        String[] comandoFinal = {COMANDO, PROCESO};
-        String salida = Embarcador.embarcar(comandoFinal);
-        System.out.println(salida);
+    public static final String FICHERO_SALIDA = "src/main/resources/informe_titanic.md";
+
+    public static final String MSG_INICIO = "Embarcando botes...";
+    public static final String MSG_EXITO = "Informe creado correctamente";
+
+    public static final String[] BOTES = {"B00", "B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08", "B09", "B10", "B11",
+                                          "B12", "B13", "B14", "B15", "B16", "B17", "B18", "B19"};
+    public static void main(String[] args) throws IOException, InterruptedException {
+        List<String> datos = new ArrayList<>();
+
+        System.out.println(MSG_INICIO);
+
+        Lanzador embarcador = new Embarcador();
+
+        for(int i = 0; i < BOTES.length; i++)
+        {
+            String[] comandoFinal = {COMANDO, PROCESO, BOTES[i]};
+            String salida = embarcador.ejecutar(comandoFinal);
+            datos.add(salida);
+        }
+        Formateador formateador = new FormateadorMD();
+
+        String documento = formateador.formatear(datos);
+
+        Escritor escritor = new EscritorDocumentos();
+        escritor.escribir(FICHERO_SALIDA,documento);
+        System.out.println(MSG_EXITO);
     }
 }

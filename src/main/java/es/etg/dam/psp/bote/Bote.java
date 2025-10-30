@@ -11,11 +11,13 @@ public class Bote {
     public static final String HOMBRE = "h";
     public static final String MUJER = "m";
     public static final String NINIO = "n";
-    public static final String SEPARADOR = ".";
+    public static final String SEPARADOR = ":";
 
     public static void main(String[] args) { 
         StringBuilder builder = new StringBuilder();
         List<String> pasajeros = new ArrayList<>();
+
+        String bote = args[0];
 
         int numPasajeros = (int)(Math.random() * MAX_PASAJEROS);
 
@@ -25,21 +27,33 @@ public class Bote {
             pasajeros.add(obtenerTipo(opcion));
         }
 
-        int numHomb = Contador.contar(pasajeros, HOMBRE);
-        int numMuj = Contador.contar(pasajeros, MUJER);
-        int numNinio = Contador.contar(pasajeros, NINIO);
+        int numMuj = contar(pasajeros, MUJER);
+        int numHomb = contar(pasajeros, HOMBRE);
+        int numNinio = contar(pasajeros, NINIO);
 
-        int[] cantidades = {numPasajeros, numHomb, numMuj, numNinio};
+        String[] salidas = {bote, Integer.toString(numPasajeros), Integer.toString(numMuj), Integer.toString(numHomb), Integer.toString(numNinio)};
 
-        for(int i = 0; i < cantidades.length; i++)
+        for(int i = 0; i < salidas.length; i++)
         {
-            builder.append(cantidades[i]).append(SEPARADOR);
+            builder.append(salidas[i]).append(SEPARADOR);
         }
         
         String salida = builder.toString();
         System.out.println(salida);
     }
 
+    public static int contar(List<String> lista, String valor)
+    {
+        int ret = 0;
+        for(String dato : lista)
+        {
+            if(dato.equals(valor))
+            {
+                ret++;
+            }
+        }
+        return ret;
+    }
 
     public static String obtenerTipo(int opcion)
     {
@@ -55,5 +69,5 @@ public class Bote {
         {
             return NINIO;
         }     
-    }  
+    }
 }
