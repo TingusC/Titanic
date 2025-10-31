@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia;
+package es.etg.dam.psp.servicio_emergencia.gestion_salida;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -7,9 +7,6 @@ import java.util.List;
 public class FormateadorMD implements Formateador{
     public static final String SEPARADOR = ":";
     public static final String SALT_LINEA = System.lineSeparator();
-    public static final int ZERO_IZQ = 0;
-    public static final int COMPARADOR = 10;
-
 
     public static final String TXT_TITULO = "# SERVICIO DE EMERGENCIAS";
     public static final String TXT_BOTE = "## Bote ";
