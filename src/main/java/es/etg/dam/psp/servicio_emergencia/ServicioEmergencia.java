@@ -8,9 +8,9 @@ import es.etg.dam.psp.servicio_emergencia.gestion_botes.Embarcador;
 import es.etg.dam.psp.servicio_emergencia.gestion_botes.Lanzador;
 import es.etg.dam.psp.servicio_emergencia.gestion_documento.Escritor;
 import es.etg.dam.psp.servicio_emergencia.gestion_documento.EscritorDocumentos;
-import es.etg.dam.psp.servicio_emergencia.gestion_salida.Formateador;
-import es.etg.dam.psp.servicio_emergencia.gestion_salida.FormateadorFactory;
-import es.etg.dam.psp.servicio_emergencia.gestion_salida.Formato;
+import es.etg.dam.psp.servicio_emergencia.gestion_formato.Formateador;
+import es.etg.dam.psp.servicio_emergencia.gestion_formato.FormateadorFactory;
+import es.etg.dam.psp.servicio_emergencia.gestion_formato.Formato;
 
 public class ServicioEmergencia {
 

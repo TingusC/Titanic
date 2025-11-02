@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia.gestion_salida;
+package es.etg.dam.psp.servicio_emergencia.gestion_formato;
 
 import java.util.List;
 
