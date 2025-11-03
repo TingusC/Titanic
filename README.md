@@ -69,11 +69,11 @@ Este debe generar un número de pasajeros de forma aleatoria, asignarles un tipo
 
 Para generar el número aleatorio de pasajeros, el bote utiliza la clase `Math` de Java y el método `random` de la misma, parseado a int y multiplicado por 100, el número máximo de tripulantes que puede tener un bote.
 
-> Dar tipo a los pasajeros(*obtenerTipo()*):
+> **Dar tipo a los pasajeros**(*obtenerTipo()*):
 
 A cada pasajero se le asignará un tipo, como ya se mencionó antes. Para hacerlo, se vuelve a utilizar el `random` como en el punto anterior, multiplicado esta vez por 5, por el número máximo de opciones. Se usa el 5 para darle una probabilidad mayor a que salga hombre o mujer y una menor a los niños; si salen 0 o 1, será mujer; 3 y 4, hombre; y 2, niño.
 
-> Contar(*contar()*):
+> **Contar**(*contar()*):
 
 Ahora, con los tipos asignados a cada pasajero, podemos contar qué cantidad de cada uno hay por bote.
 
