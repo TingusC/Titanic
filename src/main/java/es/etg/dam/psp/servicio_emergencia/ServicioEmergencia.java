@@ -19,7 +19,7 @@ public class ServicioEmergencia {
     public static final String FICHERO_SALIDA = "src/main/resources/informe_titanic.md";
 
     public static final String MSG_INICIO = "Embarcando botes...";
-    public static final String MSG_DATOS = " -Datos recogidos.";
+    public static final String MSG_DATOS = " -Recuento recogido.";
     public static final String MSG_EXITO = "Informe creado correctamente.";
 
     public static final String[] BOTES = {"B00", "B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08", "B09", 
