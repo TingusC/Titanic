@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia.gestion_botes;
+package es.etg.dam.psp.servicio_emergencia.botes;
 
 import java.io.IOException;
 

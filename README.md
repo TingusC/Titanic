@@ -43,17 +43,17 @@ Además, tiene varias funcionalidades: gestionar los botes, darle el formato des
 
 <img src="imagenesREADME/servicio_emergencias.jpg">
 
-> **Gestión de los botes**(`gestion_botes`):
+> **Gestión de los botes**(`botes`):
 
 La gestión de los botes se encargará de ejecutar el comando de los botes y de recibir la salida en forma de *String*.
 
-> **Gestión del formato**(`gestion_formato`):
+> **Gestión del formato**(`formato`):
 
 La gestión del formato contará con una enumeración con los diferentes formatos que soporte el programa, MD y HTML; contará con una factoría de formateadores que, dependiendo del formato, creará un formateador u otro. 
 
 Los formatadores serán los encargados de darle formato al texto de salida. Estos contarán con maneras de incluir los elementos necesarios para el documento final: título, fecha, cuerpo del documento (información de cada bote) y la información total recogida.
 
-> **Gestión del documento** (`gestion_documento`):
+> **Gestión del documento** (`documento`):
 
 Finalmente, la gestión del documento será la encargada de, mediante la ruta y el texto final con su formato correspondiente, crear el archivo con la información.
 

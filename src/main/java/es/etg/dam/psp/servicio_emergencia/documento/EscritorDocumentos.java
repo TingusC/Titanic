@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia.gestion_documento;
+package es.etg.dam.psp.servicio_emergencia.documento;
 
 import java.io.BufferedWriter;
 import java.io.File;

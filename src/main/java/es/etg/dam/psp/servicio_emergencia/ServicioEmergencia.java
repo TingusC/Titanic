@@ -4,13 +4,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.etg.dam.psp.servicio_emergencia.gestion_botes.Embarcador;
-import es.etg.dam.psp.servicio_emergencia.gestion_botes.Lanzador;
-import es.etg.dam.psp.servicio_emergencia.gestion_documento.Escritor;
-import es.etg.dam.psp.servicio_emergencia.gestion_documento.EscritorDocumentos;
-import es.etg.dam.psp.servicio_emergencia.gestion_formato.Formateador;
-import es.etg.dam.psp.servicio_emergencia.gestion_formato.FormateadorFactory;
-import es.etg.dam.psp.servicio_emergencia.gestion_formato.Formato;
+import es.etg.dam.psp.servicio_emergencia.botes.Embarcador;
+import es.etg.dam.psp.servicio_emergencia.botes.Lanzador;
+import es.etg.dam.psp.servicio_emergencia.documento.Escritor;
+import es.etg.dam.psp.servicio_emergencia.documento.EscritorDocumentos;
+import es.etg.dam.psp.servicio_emergencia.formato.Formateador;
+import es.etg.dam.psp.servicio_emergencia.formato.FormateadorFactory;
+import es.etg.dam.psp.servicio_emergencia.formato.Formato;
 
 public class ServicioEmergencia {
 

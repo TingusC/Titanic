@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia.gestion_botes;
+package es.etg.dam.psp.servicio_emergencia.botes;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;

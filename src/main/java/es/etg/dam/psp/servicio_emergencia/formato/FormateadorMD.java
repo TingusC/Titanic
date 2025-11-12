@@ -1,4 +1,4 @@
-package es.etg.dam.psp.servicio_emergencia.gestion_formato;
+package es.etg.dam.psp.servicio_emergencia.formato;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
